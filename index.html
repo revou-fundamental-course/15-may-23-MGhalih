@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Kalkulator Matematik Persegi & Persegi Panjang</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Katik</h1>
+        <h3>Kalkulator Matematik</h3>
+    </header>
+
+    <main>
+        <div class="welcome">
+            <h2>Welcome to Katik ! :)</h2>
+            <p>A simple net to calculate the area and perimeter of a flat shape</p>
+        </div>
+
+        <div class="katik">
+            <div class="calculator">
+                <h2>Hitung Luas & Keliling Persegi</h2>
+
+                <div>
+                    <label for="sisi-keliling">Sisi (Keliling):</label>
+                    <input type="number" id="sisi-keliling" min="0" required>
+                </div>
+
+                <div>
+                    <button onclick="hitungKeliling()">Hitung Keliling</button>
+                    <span id="output_keliling"></span>
+                </div>
+
+                <div>
+                    <label for="sisi-luas">Sisi (Luas):</label>
+                    <input type="number" id="sisi-luas" min="0" required>
+                </div>
+
+                <div>
+                    <button onclick="hitungLuas()">Hitung Luas</button>
+                    <span id="output_luas"></span>
+                </div>
+
+                <div>
+                    <button onclick="resetForm()">Reset</button>
+                </div>
+            </div>
+
+            <div class="calculator">
+                <h2>Hitung Luas & Keliling Persegi Panjang</h2>
+
+                <div>
+                    <label for="pp-panjang">Panjang :</label>
+                    <input type="number" id="pp-panjang" min="0" required>
+                </div>
+
+                <div>
+                    <label for="pp-lebar">Lebar :</label>
+                    <input type="number" id="pp-lebar" min="0" required>
+                </div>
+
+                <div class="parent-button">
+                    <button onclick="hitungLuasPersegiPanjang()">Hitung Luas</button>
+                    <span id="pp-luas"></span>
+                </div>
+                
+                <div>
+                    <button onclick="hitungKelilingPersegiPanjang()">Hitung Keliling</button>
+                    <span id="pp-keliling"></span>
+                </div>
+                <div>
+                    <button onclick="resetForm()">Reset</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; Ghalih 2023 Kalkulator Matematik</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
